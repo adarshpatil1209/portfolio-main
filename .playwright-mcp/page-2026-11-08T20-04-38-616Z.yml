@@ -1,0 +1,65 @@
+- generic [active] [ref=f3e1]:
+  - navigation [ref=f3e2]:
+    - link [ref=f3e3] [cursor=pointer]:
+      - /url: /
+      - img "Adarsh Patil" [ref=f3e4]
+    - generic [ref=f3e5]:
+      - link "Projects" [ref=f3e6] [cursor=pointer]:
+        - /url: /projects
+      - link "Contact" [ref=f3e7] [cursor=pointer]:
+        - /url: /Contact
+      - link "GitHub Profile" [ref=f3e10] [cursor=pointer]:
+        - /url: https://github.com/adarshpatil1209
+      - link "LinkedIn Profile" [ref=f3e15] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/adarsh-patil-409465383/
+      - button "Toggle theme" [ref=f3e22] [cursor=pointer]
+      - generic [ref=f3e31]:
+        - button [ref=f3e32]:
+          - generic [ref=f3e33]:
+            - generic:
+              - generic: ⌘
+              - text: K
+        - generic [ref=f3e34]:
+          - heading "Command Palette" [level=2] [ref=f3e35]
+          - paragraph [ref=f3e36]: Search for a command to run...
+  - main [ref=f3e37]:
+    - generic [ref=f3e39]:
+      - heading "Contact" [level=1] [ref=f3e42]
+      - paragraph [ref=f3e43]: I’m currently open to internships and collaborations. Send me a message and I’ll get back to you.
+      - generic [ref=f3e44]:
+        - generic [ref=f3e45]:
+          - generic [ref=f3e46]:
+            - text: Full name
+            - textbox "Full name" [ref=f3e47]:
+              - /placeholder: Your name
+          - generic [ref=f3e48]:
+            - text: Email Address
+            - textbox "Email Address" [ref=f3e49]:
+              - /placeholder: you@example.com
+          - generic [ref=f3e50]:
+            - text: Message
+            - textbox "Message" [ref=f3e51]:
+              - /placeholder: Tell me about the opportunity or project
+          - generic [ref=f3e52]:
+            - button "Send Sent" [disabled]:
+              - generic: Send
+              - generic: Sent
+        - generic [ref=f3e53]:
+          - paragraph [ref=f3e55]: Adarsh Patil
+          - generic [ref=f3e56]:
+            - link "LinkedIn" [ref=f3e57] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/adarsh-patil-409465383/
+            - link "GitHub" [ref=f3e62] [cursor=pointer]:
+              - /url: https://github.com/adarshpatil1209
+  - contentinfo [ref=f3e68]:
+    - generic [ref=f3e69]:
+      - paragraph [ref=f3e70]: Built by Adarsh Patil
+      - generic [ref=f3e71]:
+        - link "GitHub" [ref=f3e72] [cursor=pointer]:
+          - /url: https://github.com/adarshpatil1209
+        - link "LinkedIn" [ref=f3e76] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/adarsh-patil-409465383/
+        - link "Email" [ref=f3e81] [cursor=pointer]:
+          - /url: mailto:adarshpatil862@gmail.com
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f3e90] [cursor=pointer]

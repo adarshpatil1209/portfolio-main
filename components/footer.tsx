@@ -17,7 +17,7 @@ const Footer = () => {
         <p className="text-neutral-600 dark:text-neutral-400 text-sm font-custom2 tracking-normal transition-colors duration-300 hover:text-neutral-900 dark:hover:text-neutral-100">
           Built by Adarsh Patil
         </p>
-        <div className="flex items-center gap-4 ml-9">
+        <div className="flex items-center gap-4 sm:ml-auto ml-0">
           {socialLinks.map((link) => {
             const IconComponent = link.icon
             return (

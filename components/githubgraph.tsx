@@ -49,14 +49,14 @@ const GithubGraph = () => {
               />
               <Tooltip
                 id="github-tooltip"
+                border={dark ? "1px solid #404040" : "1px solid #e5e5e5"}
+                opacity={1}
                 style={{
                   backgroundColor: dark ? "#171717" : "#ffffff",
                   color: dark ? "#e5e5e5" : "#171717",
                   borderRadius: "8px",
                   padding: "8px 12px",
                   fontSize: "12px",
-                  border: dark ? "1px solid #404040" : "1px solid #e5e5e5",
-                  opacity: 1,
                 }}
               />
             </>

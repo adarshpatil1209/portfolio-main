@@ -3,9 +3,9 @@
 import Container from "@/components/containers";
 import Projects from "@/components/projects";
 
-export default function Home() {
+export default function ProjectsPage() {
   return (
-    <Container className="min-h-[200vh] px-8 pt-24 md:p-20 md:pb-10 mx-auto">
+    <Container className="px-8 pt-24 md:p-20 md:pb-10 mx-auto">
 
       {/* RIGHT BORDER */}
       <div

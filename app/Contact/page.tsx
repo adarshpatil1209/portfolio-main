@@ -39,10 +39,11 @@ export default function Contact() {
       if (response.ok) {
         toast.success("Message sent! I'll get back to you soon.");
         form.reset();
+        setFormData({ name: "", email: "", message: "" });
       } else {
         toast.error("Something went wrong. Please try again.");
       }
-    } catch (error) {
+    } catch {
       toast.error("Network error. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -51,7 +52,7 @@ export default function Contact() {
 
   return (
     <div className="relative flex min-h-screen justify-center font-sans overflow-hidden">
-      <Container className="min-h-[200vh] px-8 pt-24 md:p-20 md:pb-10 mx-auto">
+      <Container className="px-8 pt-24 md:p-20 md:pb-10 mx-auto">
         {/* Background Pattern & Borders */}
         <div
           className="absolute right-0 top-0 h-full w-6 border-x border-x-(--pattern-fg) 

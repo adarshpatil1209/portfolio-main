@@ -1,0 +1,69 @@
+- generic [active] [ref=f2e1]:
+  - navigation [ref=f2e2]:
+    - link [ref=f2e3] [cursor=pointer]:
+      - /url: /
+      - img "Adarsh Patil" [ref=f2e4]
+    - generic [ref=f2e5]:
+      - link "Projects" [ref=f2e6] [cursor=pointer]:
+        - /url: /projects
+      - link "Contact" [ref=f2e7] [cursor=pointer]:
+        - /url: /Contact
+      - link "GitHub Profile" [ref=f2e10] [cursor=pointer]:
+        - /url: https://github.com/adarshpatil1209
+      - link "LinkedIn Profile" [ref=f2e15] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/adarsh-patil-409465383/
+      - button "Toggle theme" [ref=f2e22] [cursor=pointer]
+      - generic [ref=f2e31]:
+        - button [ref=f2e32]:
+          - generic [ref=f2e33]:
+            - generic:
+              - generic: ⌘
+              - text: K
+        - generic [ref=f2e34]:
+          - heading "Command Palette" [level=2] [ref=f2e35]
+          - paragraph [ref=f2e36]: Search for a command to run...
+  - main [ref=f2e37]:
+    - generic [ref=f2e38]:
+      - heading "Projects" [level=1] [ref=f2e41]
+      - paragraph [ref=f2e42]: Here are the projects I've built so far. More are on the way.
+      - region "Projects" [ref=f2e44]:
+        - paragraph [ref=f2e45]: Things I've built so far, from UI to backend.
+        - generic [ref=f2e46]:
+          - generic [ref=f2e49] [cursor=pointer]:
+            - generic [ref=f2e51]:
+              - heading "View Project" [level=1] [ref=f2e53]
+              - link "Visit Pomodoro Productivity App live website" [ref=f2e56]:
+                - /url: https://pomoxp.vercel.app
+                - img "Pomodoro Productivity App preview" [ref=f2e57]
+            - generic [ref=f2e58]:
+              - generic [ref=f2e59]:
+                - heading "Pomodoro Productivity App" [level=3] [ref=f2e61]
+                - generic [ref=f2e62]:
+                  - link "Pomodoro Productivity App live site" [ref=f2e63]:
+                    - /url: https://pomoxp.vercel.app
+                  - link "Pomodoro Productivity App on GitHub" [ref=f2e67]:
+                    - /url: https://github.com/adarshpatil1209/Pomodoro-Study-Timer
+              - paragraph [ref=f2e71]: A zero-dependency productivity web app with a Pomodoro timer, streak tracking, task management, real-time chat and an instant-save dashboard. Fully responsive, no framework.
+          - generic [ref=f2e85] [cursor=pointer]:
+            - generic [ref=f2e87]:
+              - heading "View Project" [level=1] [ref=f2e89]
+              - img "NestMate Web preview" [ref=f2e92]
+            - generic [ref=f2e93]:
+              - generic [ref=f2e94]:
+                - heading "NestMate Web" [level=3] [ref=f2e96]
+                - link "NestMate Web on GitHub" [ref=f2e98]:
+                  - /url: https://github.com/adarshpatil1209/NestMate-Housing-Platform
+              - paragraph [ref=f2e102]: A full-stack student housing platform that helps students find PG accommodation near their college. Built solo, from UI/UX design to backend logic and database integration.
+              - generic [ref=f2e103]: In Progress
+  - contentinfo [ref=f2e126]:
+    - generic [ref=f2e127]:
+      - paragraph [ref=f2e128]: Built by Adarsh Patil
+      - generic [ref=f2e129]:
+        - link "GitHub" [ref=f2e130] [cursor=pointer]:
+          - /url: https://github.com/adarshpatil1209
+        - link "LinkedIn" [ref=f2e134] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/adarsh-patil-409465383/
+        - link "Email" [ref=f2e139] [cursor=pointer]:
+          - /url: mailto:adarshpatil862@gmail.com
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f2e148] [cursor=pointer]

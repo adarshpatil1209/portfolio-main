@@ -18,15 +18,7 @@ export const profile = {
   ],
   about:
     "I'm a Computer Science Engineering student specialising in AI & ML, based in Kolhapur. I like taking a project from idea to deployment on my own: designing the interface, writing the backend logic and documenting what I build. I'm looking for a frontend development, technical content writing or generalist software engineering internship at a product-focused team.",
-  interests: [
-    "AI & Machine Learning",
-    "Software Product Development",
-    "Open Source",
-    "Competitive Programming",
-    "Entrepreneurship",
-    "Basketball",
-    "Public Speaking",
-  ],
+
 };
 
 export const education = [

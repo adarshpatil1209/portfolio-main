@@ -101,21 +101,19 @@ export function SocialProfileCard({
 
   const isGitHub = type === "github";
   const profileUrl = isGitHub ? profile.github : profile.linkedin;
-  const avatarSrc = isGitHub && !imgError
-    ? "https://github.com/adarshpatil1209.png"
-    : "/avatar.svg";
+  const avatarSrc = imgError ? "/avatar.svg" : "/profile.jpg";
 
   // Alignment classes for desktop and mobile clamping
   const alignmentClasses =
     align === "left"
       ? "left-0"
       : align === "right"
-      ? "right-0"
-      : align === "responsive-left"
-      ? "left-0 md:left-1/2 md:-translate-x-1/2"
-      : align === "responsive-right"
-      ? "right-0 md:left-1/2 md:-translate-x-1/2"
-      : "left-1/2 -translate-x-1/2";
+        ? "right-0"
+        : align === "responsive-left"
+          ? "left-0 md:left-1/2 md:-translate-x-1/2"
+          : align === "responsive-right"
+            ? "right-0 md:left-1/2 md:-translate-x-1/2"
+            : "left-1/2 -translate-x-1/2";
 
   const placementClasses =
     placement === "top" ? "bottom-full mb-2.5" : "top-full mt-2.5";
@@ -160,9 +158,8 @@ export function SocialProfileCard({
           >
             {/* Invisible hover bridge to eliminate gap flickers */}
             <div
-              className={`absolute inset-x-0 h-3 pointer-events-auto ${
-                placement === "top" ? "-bottom-3" : "-top-3"
-              }`}
+              className={`absolute inset-x-0 h-3 pointer-events-auto ${placement === "top" ? "-bottom-3" : "-top-3"
+                }`}
               aria-hidden="true"
             />
 
@@ -181,10 +178,9 @@ export function SocialProfileCard({
               <div
                 className={`
                   relative h-14 w-full overflow-hidden
-                  ${
-                    isGitHub
-                      ? "bg-gradient-to-r from-neutral-800 via-neutral-900 to-neutral-800"
-                      : "bg-gradient-to-r from-neutral-800 via-[#0a3055]/50 to-neutral-800"
+                  ${isGitHub
+                    ? "bg-gradient-to-r from-neutral-800 via-neutral-900 to-neutral-800"
+                    : "bg-gradient-to-r from-neutral-800 via-[#0a3055]/50 to-neutral-800"
                   }
                 `}
               >

@@ -1,0 +1,206 @@
+- generic [active] [ref=f1e1]:
+  - navigation [ref=f1e2]:
+    - link [ref=f1e3] [cursor=pointer]:
+      - /url: /
+      - img "Adarsh Patil" [ref=f1e4]
+    - generic [ref=f1e5]:
+      - link "Projects" [ref=f1e6] [cursor=pointer]:
+        - /url: /projects
+      - link "Contact" [ref=f1e7] [cursor=pointer]:
+        - /url: /Contact
+      - link "GitHub Profile" [ref=f1e10] [cursor=pointer]:
+        - /url: https://github.com/adarshpatil1209
+      - link "LinkedIn Profile" [ref=f1e15] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/adarsh-patil-409465383/
+      - button "Toggle theme" [ref=f1e22] [cursor=pointer]
+      - generic [ref=f1e31]:
+        - button [ref=f1e32]:
+          - generic [ref=f1e33]:
+            - generic:
+              - generic: ⌘
+              - text: K
+        - generic [ref=f1e34]:
+          - heading "Command Palette" [level=2] [ref=f1e35]
+          - paragraph [ref=f1e36]: Search for a command to run...
+  - main [ref=f1e37]:
+    - generic [ref=f1e39]:
+      - region "Profile Introduction" [ref=f1e42]:
+        - generic [ref=f1e43]:
+          - img "Adarsh Patil" [ref=f1e46]
+          - generic [ref=f1e47]:
+            - heading "Adarsh Patil" [level=1] [ref=f1e48]:
+              - generic [ref=f1e50]:
+                - generic [aria-hidden]: Adarsh Patil
+                - generic [ref=f1e51]: Adarsh Patil
+            - paragraph [ref=f1e52]: AIML Student
+      - region [ref=f1e54]:
+        - heading "About" [level=2] [ref=f1e56]
+        - paragraph [ref=f1e58]: "I'm a Computer Science Engineering student specialising in AI & ML, based in Kolhapur. I like taking a project from idea to deployment on my own: designing the interface, writing the backend logic and documenting what I build. I'm looking for a frontend development, technical content writing or generalist software engineering internship at a product-focused team."
+      - region [ref=f1e59]:
+        - heading "Technical Skills" [level=2] [ref=f1e61]
+        - paragraph [ref=f1e63]: The languages, tools and concepts I work with.
+        - generic [ref=f1e64]:
+          - generic [ref=f1e65]:
+            - heading "Languages" [level=3] [ref=f1e66]
+            - list [ref=f1e67]:
+              - listitem [ref=f1e68]:
+                - generic [ref=f1e71]: Python
+              - listitem [ref=f1e72]:
+                - generic [ref=f1e75]: C
+              - listitem [ref=f1e76]:
+                - generic [ref=f1e79]: JavaScript
+              - listitem [ref=f1e80]:
+                - generic [ref=f1e83]: HTML5
+              - listitem [ref=f1e84]:
+                - generic [ref=f1e87]: CSS3
+          - generic [ref=f1e88]:
+            - heading "Tools" [level=3] [ref=f1e89]
+            - list [ref=f1e90]:
+              - listitem [ref=f1e91]:
+                - generic [ref=f1e94]: Git
+              - listitem [ref=f1e95]:
+                - generic [ref=f1e98]: GitHub
+              - listitem [ref=f1e99]:
+                - generic [ref=f1e102]: VS Code
+              - listitem [ref=f1e103]:
+                - generic [ref=f1e106]: Vercel
+              - listitem [ref=f1e107]:
+                - generic [ref=f1e110]: Figma
+              - listitem [ref=f1e111]:
+                - generic [ref=f1e114]: GitHub Copilot
+          - generic [ref=f1e115]:
+            - heading "Concepts" [level=3] [ref=f1e116]
+            - list [ref=f1e117]:
+              - listitem [ref=f1e118]:
+                - generic [ref=f1e119]: Responsive Web Design
+              - listitem [ref=f1e120]:
+                - generic [ref=f1e121]: REST APIs
+              - listitem [ref=f1e122]:
+                - generic [ref=f1e123]: Object-Oriented Programming
+              - listitem [ref=f1e124]:
+                - generic [ref=f1e125]: UI/UX Design
+              - listitem [ref=f1e126]:
+                - generic [ref=f1e127]: Agile Workflow
+              - listitem [ref=f1e128]:
+                - generic [ref=f1e129]: Project Deployment
+          - generic [ref=f1e130]:
+            - heading "AI & ML" [level=3] [ref=f1e131]
+            - list [ref=f1e132]:
+              - listitem [ref=f1e133]:
+                - generic [ref=f1e134]: Machine Learning Fundamentals
+              - listitem [ref=f1e135]:
+                - generic [ref=f1e136]: Generative AI
+              - listitem [ref=f1e137]:
+                - generic [ref=f1e138]: LLM Prompt Engineering
+      - heading "Projects" [level=2] [ref=f1e140]
+      - region "Projects" [ref=f1e142]:
+        - paragraph [ref=f1e143]: Things I've built so far, from UI to backend.
+        - generic [ref=f1e144]:
+          - generic [ref=f1e147] [cursor=pointer]:
+            - generic [ref=f1e149]:
+              - heading "View Project" [level=1] [ref=f1e151]
+              - link "Visit Pomodoro Productivity App live website" [ref=f1e154]:
+                - /url: https://pomoxp.vercel.app
+                - img "Pomodoro Productivity App preview" [ref=f1e155]
+            - generic [ref=f1e156]:
+              - generic [ref=f1e157]:
+                - heading "Pomodoro Productivity App" [level=3] [ref=f1e159]
+                - generic [ref=f1e160]:
+                  - link "Pomodoro Productivity App live site" [ref=f1e161]:
+                    - /url: https://pomoxp.vercel.app
+                  - link "Pomodoro Productivity App on GitHub" [ref=f1e165]:
+                    - /url: https://github.com/adarshpatil1209/Pomodoro-Study-Timer
+              - paragraph [ref=f1e169]: A zero-dependency productivity web app with a Pomodoro timer, streak tracking, task management, real-time chat and an instant-save dashboard. Fully responsive, no framework.
+          - generic [ref=f1e183] [cursor=pointer]:
+            - generic [ref=f1e185]:
+              - heading "View Project" [level=1] [ref=f1e187]
+              - img "NestMate Web preview" [ref=f1e190]
+            - generic [ref=f1e191]:
+              - generic [ref=f1e192]:
+                - heading "NestMate Web" [level=3] [ref=f1e194]
+                - link "NestMate Web on GitHub" [ref=f1e196]:
+                  - /url: https://github.com/adarshpatil1209/NestMate-Housing-Platform
+              - paragraph [ref=f1e200]: A full-stack student housing platform that helps students find PG accommodation near their college. Built solo, from UI/UX design to backend logic and database integration.
+              - generic [ref=f1e201]: In Progress
+      - region [ref=f1e224]:
+        - heading "Experience" [level=2] [ref=f1e226]
+        - paragraph [ref=f1e234]: At the beginning of my professional journey. Currently focused on building practical skills, developing real-world projects, exploring open-source contributions and growing as a developer.
+      - region [ref=f1e235]:
+        - heading "Open Source" [level=2] [ref=f1e237]
+        - generic [ref=f1e240]:
+          - generic [ref=f1e241]:
+            - generic [ref=f1e242]:
+              - heading [level=3] [ref=f1e243]:
+                - link "Sugar Labs" [ref=f1e244] [cursor=pointer]:
+                  - /url: https://github.com/sugarlabs
+              - paragraph [ref=f1e248]: Open Source Documentation Contributor
+            - generic [ref=f1e249]: Jan 2025 – Mar 2025
+          - paragraph [ref=f1e250]: Contributed documentation improvements to Sugar Labs, an educational nonprofit, through pull requests reviewed and merged by project maintainers.
+      - region [ref=f1e251]:
+        - heading "GitHub Activity" [level=2] [ref=f1e253]
+        - paragraph [ref=f1e255]: My contributions on GitHub over the past year.
+        - paragraph [ref=f1e256]:
+          - link "View full profile on GitHub →" [ref=f1e257] [cursor=pointer]:
+            - /url: https://github.com/adarshpatil1209
+      - region [ref=f1e258]:
+        - heading "Achievements & Hackathons" [level=2] [ref=f1e260]
+        - list [ref=f1e262]:
+          - listitem [ref=f1e263]:
+            - generic [ref=f1e264]: Round 2 Qualifier
+            - heading "ISRO Hackathon" [level=3] [ref=f1e271]
+            - paragraph [ref=f1e272]: Shortlisted into the second round after submitting a technical presentation backed by original research.
+          - listitem [ref=f1e273]:
+            - generic [ref=f1e274]: Finalist
+            - heading "Tech Negotia" [level=3] [ref=f1e281]
+            - paragraph [ref=f1e282]: Pitched an AI-driven solution to a live evaluation panel.
+          - listitem [ref=f1e283]:
+            - generic [ref=f1e284]: Participant
+            - heading "FedEx SMART Hackathon · Shaastra 2026, IIT Madras" [level=3] [ref=f1e291]
+            - paragraph [ref=f1e292]: Took part in the FedEx SMART Hackathon at Shaastra 2026.
+          - listitem [ref=f1e293]:
+            - generic [ref=f1e294]: Round 2 Qualifier
+            - heading "Stranger Code" [level=3] [ref=f1e301]
+            - paragraph [ref=f1e302]: Competitive C programming and aptitude contest.
+      - region [ref=f1e303]:
+        - heading "Education" [level=2] [ref=f1e305]
+        - generic [ref=f1e307]:
+          - generic [ref=f1e308]:
+            - generic [ref=f1e309]:
+              - generic [ref=f1e310]:
+                - heading "KIT's College of Engineering, Kolhapur" [level=3] [ref=f1e311]
+                - paragraph [ref=f1e312]: B.Tech – Computer Science Engineering, AI & ML Specialization
+              - generic [ref=f1e313]:
+                - generic [ref=f1e314]: Aug 2025 – May 2029
+                - generic [ref=f1e315]: Kolhapur, Maharashtra
+            - paragraph [ref=f1e316]: "Coursework: Data Structures, C Programming, Python, Engineering Mathematics, AI & ML Fundamentals"
+          - generic [ref=f1e318]:
+            - generic [ref=f1e319]:
+              - heading "Sainik School, Bijapur" [level=3] [ref=f1e320]
+              - paragraph [ref=f1e321]: "Higher Secondary Certificate – Science (Grade: A1)"
+            - generic [ref=f1e322]:
+              - generic [ref=f1e323]: Graduated 2023
+              - generic [ref=f1e324]: Bijapur, Karnataka
+      - generic [ref=f1e325]:
+        - heading "Contact" [level=2] [ref=f1e327]
+        - generic [ref=f1e329]:
+          - link "Resume" [ref=f1e330] [cursor=pointer]:
+            - /url: /Adarsh_Patil_Resume.pdf
+          - link "GitHub" [ref=f1e336] [cursor=pointer]:
+            - /url: https://github.com/adarshpatil1209
+          - link "LinkedIn" [ref=f1e342] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/adarsh-patil-409465383/
+          - link "Email" [ref=f1e348] [cursor=pointer]:
+            - /url: mailto:adarshpatil862@gmail.com
+          - link "Contact" [ref=f1e353] [cursor=pointer]:
+            - /url: /Contact
+  - contentinfo [ref=f1e357]:
+    - generic [ref=f1e358]:
+      - paragraph [ref=f1e359]: Built by Adarsh Patil
+      - generic [ref=f1e360]:
+        - link "GitHub" [ref=f1e361] [cursor=pointer]:
+          - /url: https://github.com/adarshpatil1209
+        - link "LinkedIn" [ref=f1e365] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/adarsh-patil-409465383/
+        - link "Email" [ref=f1e370] [cursor=pointer]:
+          - /url: mailto:adarshpatil862@gmail.com
+  - region "Notifications alt+T"

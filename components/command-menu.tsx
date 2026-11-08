@@ -10,7 +10,6 @@ import {
     Moon,
     Sun,
     Laptop,
-    Search,
     Code,
     ArrowUp,
     ArrowDown,

@@ -20,7 +20,7 @@ const description =
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://adarshpatil.tech"),
-  title: { default: "Adarsh Patil | Developer Portfolio", template: "%s | Adarsh Patil" },
+  title: { default: "Adarsh", template: "%s | Adarsh Patil" },
   description,
   authors: [{ name: "Adarsh Patil", url: "https://adarshpatil.tech" }],
   openGraph: {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: { 
+}: {
   children: React.ReactNode;
 }) {
   return (

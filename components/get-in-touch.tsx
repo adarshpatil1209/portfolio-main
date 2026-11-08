@@ -1,75 +1,123 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
-import { ArrowRight, Download } from "lucide-react";
+import { FileText, Github, Linkedin, Mail, MessageSquare } from "lucide-react";
 import { profile } from "@/lib/profile";
+import { SectionHeader } from "@/components/section-header";
+import { SocialProfileCard } from "@/components/social-profile-card";
+
+const buttons = [
+  {
+    label: "Resume",
+    icon: FileText,
+    href: "/Adarsh_Patil_Resume.pdf",
+    download: true,
+    external: false,
+  },
+  {
+    label: "GitHub",
+    icon: Github,
+    href: profile.github,
+    download: false,
+    external: true,
+  },
+  {
+    label: "LinkedIn",
+    icon: Linkedin,
+    href: profile.linkedin,
+    download: false,
+    external: true,
+  },
+  {
+    label: "Email",
+    icon: Mail,
+    href: `mailto:${profile.email}`,
+    download: false,
+    external: false,
+  },
+  {
+    label: "Contact",
+    icon: MessageSquare,
+    href: "/Contact",
+    download: false,
+    external: false,
+  },
+] as const;
 
 export default function GetInTouch() {
-    return (
-        <div id="contact" className="w-full mt-8 mb-10 relative z-10">
-            <div className="w-auto border-t border-solid border-[var(--pattern-fg)] opacity-100 dark:opacity-15 mb-2 -mx-2 md:-mx-14"></div>
-            <div className="flex w-full justify-between items-center py-2">
-                <h2 className="text-3xl md:text-3xl font-bold font-custom tracking-tight text-neutral-900 dark:text-neutral-50">
-                    <span className="link--elara">Contact & Resume</span>
-                </h2>
-            </div>
-            <div className="w-auto border-t border-solid border-[var(--pattern-fg)] opacity-100 dark:opacity-15 mb-4 -mx-2 md:-mx-14"></div>
+  return (
+    <div id="contact" className="w-full mt-4 mb-10 relative z-10">
+      <SectionHeader title="Contact" id="contact-title" />
 
-            <div className="flex flex-col items-start space-y-6">
-                <p className="font-custom2 text-neutral-700 dark:text-neutral-300 mt-3 px-2 py-[7px] text-sm inline-block bg-neutral-100 dark:bg-neutral-900 border-dashed border-neutral-300 dark:border-neutral-700 border mb-6">
-                    I’m currently open to internships and collaborations in frontend development, technical writing and software engineering.
-                </p>
+      {/* Button grid — 5 equal columns on md+, 2 columns on mobile (last button spans full width) */}
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+        {buttons.map(({ label, icon: Icon, href, download, external }, index) => {
+          const isGitHub = label === "GitHub";
+          const isLinkedIn = label === "LinkedIn";
 
-                <div className="w-full max-w-2xl flex flex-wrap gap-4">
-                    <Link href="/Contact">
-                        <button
-                            className="group relative overflow-hidden rounded-lg 
-                            bg-linear-to-b from-white to-neutral-100 dark:from-neutral-800 dark:to-neutral-900 
-                            border border-neutral-200 dark:border-neutral-800 
-                            text-neutral-800 dark:text-neutral-200 text-sm font-medium px-6 py-2.5 
-                            transition-all duration-300 
-                            hover:from-neutral-50 hover:to-neutral-100 dark:hover:from-neutral-800 dark:hover:to-neutral-800
-                            shadow-[0_1px_2px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,1)] 
-                            dark:shadow-[0_1px_2px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.05)]"
-                        >
-                            <span className="relative z-10 flex items-center gap-2">
-                                Send Enquiry
-                                <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 opacity-70 group-hover:opacity-100" />
-                            </span>
-                        </button>
-                    </Link>
-
-                    <a
-                        href={profile.resumePath}
-                        download
-                        className="group relative overflow-hidden rounded-lg
-                            bg-linear-to-b from-white to-neutral-100 dark:from-neutral-800 dark:to-neutral-900
-                            border border-neutral-200 dark:border-neutral-800
-                            text-neutral-800 dark:text-neutral-200 text-sm font-medium px-6 py-2.5
-                            transition-all duration-300
-                            hover:from-neutral-50 hover:to-neutral-100 dark:hover:from-neutral-800 dark:hover:to-neutral-800
-                            shadow-[0_1px_2px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,1)]
-                            dark:shadow-[0_1px_2px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.05)]"
-                    >
-                        <span className="relative z-10 flex items-center gap-2">
-                            Download Resume
-                            <Download className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100" aria-hidden="true" />
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-            {/* Decorative Grid Pattern */}
-            <div
-                className="absolute -bottom-12 -right-2 md:-bottom-20 md:-right-14 w-80 h-40 -z-10 pointer-events-none opacity-60 dark:opacity-40"
-                style={{
-                    maskImage: 'radial-gradient(circle at bottom right, black, transparent 70%)',
-                    WebkitMaskImage: 'radial-gradient(circle at bottom right, black, transparent 70%)'
-                }}
+          const buttonElement = (
+            <a
+              key={label}
+              href={href}
+              {...(download ? { download: true } : {})}
+              {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              className={`
+                group flex items-center justify-center gap-2.5
+                w-full h-full
+                px-4 py-3
+                rounded-xl
+                border border-neutral-200 dark:border-neutral-800
+                bg-white dark:bg-neutral-900
+                text-neutral-700 dark:text-neutral-300
+                text-sm font-medium font-custom2
+                transition-all duration-200
+                hover:border-neutral-300 dark:hover:border-neutral-700
+                hover:bg-neutral-50 dark:hover:bg-neutral-800/80
+                hover:text-neutral-900 dark:hover:text-neutral-100
+                focus-visible:outline-none focus-visible:ring-2
+                focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600
+                ${!isGitHub && !isLinkedIn && index === buttons.length - 1 ? "col-span-2 md:col-span-1" : ""}
+              `}
             >
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.1)_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:24px_24px] bg-right-bottom shadow-[inset_20px_20px_40px_rgba(255,255,255,0.8)] dark:shadow-[inset_20px_20px_40px_rgba(10,10,10,0.8)]"></div>
-            </div>
-        </div>
-    );
+              <Icon
+                className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity duration-200 shrink-0"
+                aria-hidden="true"
+              />
+              <span>{label}</span>
+            </a>
+          );
+
+          if (isGitHub || isLinkedIn) {
+            return (
+              <SocialProfileCard
+                key={label}
+                type={isGitHub ? "github" : "linkedin"}
+                placement="top"
+                align={isGitHub ? "responsive-right" : "responsive-left"}
+                className={`w-full h-full flex ${
+                  index === buttons.length - 1 ? "col-span-2 md:col-span-1" : ""
+                }`}
+              >
+                {buttonElement}
+              </SocialProfileCard>
+            );
+          }
+
+          return buttonElement;
+        })}
+      </div>
+
+      {/* Decorative grid pattern */}
+      <div
+        className="absolute -bottom-12 -right-2 md:-bottom-20 md:-right-14 w-80 h-40 -z-10 pointer-events-none opacity-60 dark:opacity-40"
+        style={{
+          maskImage: "radial-gradient(circle at bottom right, black, transparent 70%)",
+          WebkitMaskImage:
+            "radial-gradient(circle at bottom right, black, transparent 70%)",
+        }}
+      >
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.1)_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:24px_24px] bg-right-bottom shadow-[inset_20px_20px_40px_rgba(255,255,255,0.8)] dark:shadow-[inset_20px_20px_40px_rgba(10,10,10,0.8)]"></div>
+      </div>
+    </div>
+  );
 }

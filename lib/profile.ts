@@ -105,19 +105,3 @@ export const achievements = [
   },
 ];
 
-export const now = {
-  building: [
-    {
-      title: "NestMate Web",
-      description:
-        "A full-stack student housing platform that helps students find PG accommodation near their college.",
-    },
-  ],
-  learning: [
-    "React",
-    "Node.js",
-    "Machine Learning & Generative AI",
-    "Data Structures & Algorithms",
-    "Software engineering fundamentals",
-  ],
-};

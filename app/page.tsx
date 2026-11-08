@@ -10,8 +10,8 @@ import Experience from "@/components/experience";
 import OpenSource from "@/components/open-source";
 import GithubGraph from "@/components/githubgraph";
 import Achievements from "@/components/achievements";
-import Now from "@/components/now";
 import GetInTouch from "@/components/get-in-touch";
+import { SocialProfileCard } from "@/components/social-profile-card";
 
 const socials = [
   { name: "GitHub", icon: Github, href: profile.github, external: true },
@@ -45,8 +45,11 @@ export default function Home() {
             </h1>
 
             <ul className="flex flex-wrap gap-4 sm:justify-end">
-              {socials.map((social) => (
-                <li key={social.name}>
+              {socials.map((social) => {
+                const isGitHub = social.name === "GitHub";
+                const isLinkedIn = social.name === "LinkedIn";
+
+                const link = (
                   <a
                     href={social.href}
                     aria-label={social.name}
@@ -55,8 +58,28 @@ export default function Home() {
                   >
                     <social.icon size={20} aria-hidden="true" />
                   </a>
-                </li>
-              ))}
+                );
+
+                if (isGitHub || isLinkedIn) {
+                  return (
+                    <li key={social.name}>
+                      <SocialProfileCard
+                        type={isGitHub ? "github" : "linkedin"}
+                        placement="bottom"
+                        align="responsive-right"
+                      >
+                        {link}
+                      </SocialProfileCard>
+                    </li>
+                  );
+                }
+
+                return (
+                  <li key={social.name}>
+                    {link}
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -80,7 +103,6 @@ export default function Home() {
         <OpenSource />
         <GithubGraph />
         <Achievements />
-        <Now />
         <GetInTouch />
       </Container>
     </div>

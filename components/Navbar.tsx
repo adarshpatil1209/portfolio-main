@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/containers";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { Github, Linkedin } from "lucide-react";
+import { profile } from "@/lib/profile";
+import { SocialProfileCard } from "@/components/social-profile-card";
 import { ThemeToggleButton } from "@/components/ui/skiper-ui/skiper26";
 import { CommandMenu } from "@/components/command-menu";
 
@@ -85,6 +88,31 @@ const Navbar = () => {
 
           {/* Separator */}
           <div className="h-5 w-px bg-neutral-300/40 dark:bg-neutral-700/50 mx-1" />
+
+          {/* Social Profiles with Preview Cards */}
+          <SocialProfileCard type="github" placement="bottom" align="center">
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+              className="relative p-1.5 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors rounded-md hover:bg-neutral-300/25 dark:hover:bg-neutral-800/50 flex items-center justify-center"
+            >
+              <Github className="w-4 h-4" aria-hidden="true" />
+            </a>
+          </SocialProfileCard>
+
+          <SocialProfileCard type="linkedin" placement="bottom" align="center">
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+              className="relative p-1.5 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors rounded-md hover:bg-neutral-300/25 dark:hover:bg-neutral-800/50 flex items-center justify-center"
+            >
+              <Linkedin className="w-4 h-4" aria-hidden="true" />
+            </a>
+          </SocialProfileCard>
 
           {/* Theme Toggle */}
           <div

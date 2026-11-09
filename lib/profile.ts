@@ -9,7 +9,7 @@ export const profile = {
   github: "https://github.com/adarshpatil1209",
   githubUsername: "adarshpatil1209",
   linkedin: "https://www.linkedin.com/in/adarsh-patil-409465383/",
-  siteUrl: "https://adarshpatil.tech/",
+  siteUrl: "https://adarshfolio.vercel.app/",
   resumePath: "/Adarsh_Patil_Resume.pdf",
   tagline: [
     "B.Tech CSE (AI & ML) student at KIT's College of Engineering, Kolhapur.",

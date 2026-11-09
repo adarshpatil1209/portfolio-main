@@ -19,14 +19,14 @@ const description =
   "Adarsh Patil is a B.Tech CSE (AI & ML) student from Kolhapur who builds web projects end-to-end and contributes to open source.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://adarshpatil.tech"),
+  metadataBase: new URL("https://adarshfolio.vercel.app"),
   title: { default: "Adarsh", template: "%s | Adarsh Patil" },
   description,
-  authors: [{ name: "Adarsh Patil", url: "https://adarshpatil.tech" }],
+  authors: [{ name: "Adarsh Patil", url: "https://adarshfolio.vercel.app" }],
   openGraph: {
     title: "Adarsh Patil | Developer Portfolio",
     description,
-    url: "https://adarshpatil.tech/",
+    url: "https://adarshfolio.vercel.app/",
     siteName: "Adarsh Patil",
     type: "website",
   },

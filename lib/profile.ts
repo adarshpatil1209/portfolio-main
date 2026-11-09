@@ -48,6 +48,7 @@ export const skillGroups = [
   {
     title: "Concepts",
     items: [
+      "Django",
       "Responsive Web Design",
       "REST APIs",
       "Object-Oriented Programming",

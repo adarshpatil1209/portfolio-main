@@ -9,10 +9,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 import FractalTree from "@/components/ui/fractal-tree";
 import { Toaster } from "sonner";
 
-
 const instrumentSerif = Instrument_Serif({
   weight: ["400"],
-  subsets: ["latin"], // 🛠 Fix missing subsets
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const description =

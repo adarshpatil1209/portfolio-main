@@ -1,10 +1,8 @@
-/* ✅ Correct Google Fonts imports */
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 @import "tailwindcss";
 /* remove this line if you don't have it installed */
 @import "tw-animate-css";
-
 
 @custom-variant dark (&:is(.dark *));
 
@@ -28,8 +26,8 @@
 @theme inline {
   --color-primary: var(--color-neutral-800);
   --color-secondary: var(--color-neutral-600);
-  --font-custom: "Instrument Serif", serif;
-  --font-custom2: "Instrument Sans", sans-serif;
+  --font-custom: "Instrument Serif", Georgia, serif;
+  --font-custom2: "Instrument Sans", system-ui, sans-serif;
   --color-border: var(--border);
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);

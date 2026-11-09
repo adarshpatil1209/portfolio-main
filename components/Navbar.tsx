@@ -59,7 +59,7 @@ const Navbar = () => {
         <Link href="/" className="hover:opacity-75 transition-opacity duration-300">
           <Image
             className="w-9 h-9 rounded-full shadow-sm"
-            src="/avatar.svg"
+            src="/logo.jpg"
             width={100}
             height={100}
             alt="Adarsh Patil"

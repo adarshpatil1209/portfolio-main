@@ -117,12 +117,7 @@ Recommended deployment target: Vercel.
 2. Configure environment variables (if required), especially `GITHUB_TOKEN`.
 3. Deploy.
 
-## Customization
 
-- Edit intro/content in `app/page.tsx`
-- Update project/experience sections in `components/`
-- Add or edit blog posts in `data/*.mdx`
-- Replace media assets in `public/`
 
 ## License
 

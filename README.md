@@ -109,16 +109,6 @@ npm run start    # Start production server
 npm run lint     # Run ESLint
 ```
 
-## Deployment
-
-Recommended deployment target: Vercel.
-
-1. Import this repository into Vercel.
-2. Configure environment variables (if required), especially `GITHUB_TOKEN`.
-3. Deploy.
-
-
-
 ## License
 
 Licensed under the MIT License.
